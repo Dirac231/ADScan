@@ -11,3 +11,4 @@ You can paste the function in your ```~/.zshrc``` or equivalent, you can then ca
 ```
 adscan [DC_IP]
 ```
+You can specify your custom wordlists for kerbruting / password spraying at the beginning of the function.
