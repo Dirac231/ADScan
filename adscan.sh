@@ -23,7 +23,6 @@ adscan(){
 		echo -e "\n--------------SMB ENUMERATION--------------\n"
 		crackmapexec smb $dcip -u "" -p "" --shares --pass-pol --disks --computers --groups --users --loggedon-users --sessions
         	crackmapexec smb $dcip -u guest -p "" --shares --pass-pol --disks --computers --groups --users --loggedon-users --sessions
-   		smbscan $dcip $smb
 
         	echo -e "\n--------------RPC ENUMERATION--------------\n"
         	rpcclient -U "" -N $dcip -c dsroledominfo:srvinfo:enumdomains:querydominfo:getdompwinfo:enumdomusers:enumdomgroups:querydispinfo:enumprinters:netshareenumall
